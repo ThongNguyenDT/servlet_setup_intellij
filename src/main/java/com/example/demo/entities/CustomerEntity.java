@@ -19,6 +19,12 @@ public class CustomerEntity {
     @Column(name = "Address", nullable = true, length = 300)
     private String address;
 
+    public CustomerEntity(String name, int phoneNumber, String address) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
+    }
+
     public int getId() {
         return id;
     }
@@ -73,5 +79,15 @@ public class CustomerEntity {
         result = 31 * result + phoneNumber;
         result = 31 * result + (address != null ? address.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "CustomerEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", phoneNumber=" + phoneNumber +
+                ", address='" + address + '\'' +
+                '}';
     }
 }
