@@ -19,6 +19,9 @@ public class CustomerEntity {
     @Column(name = "Address", nullable = true, length = 300)
     private String address;
 
+    public CustomerEntity() {
+    }
+
     public CustomerEntity(String name, int phoneNumber, String address) {
         this.name = name;
         this.phoneNumber = phoneNumber;
