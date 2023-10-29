@@ -22,7 +22,10 @@ public class Product implements Serializable {
     public Product() {
         super();
     }
-
+    public Product(Integer phong, String name) {
+        this.phong = phong;
+        this.name = name;
+    }
 
     public Integer getPhong() {
         return phong;
