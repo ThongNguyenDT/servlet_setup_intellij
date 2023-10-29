@@ -2,9 +2,15 @@ package com.example.demo.entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+
+
 @Entity
-@Table(name = "customer", schema = "shop_storage", catalog = "")
-public class CustomerEntity {
+@Table(name = "customer", schema = "shop_storage")
+@NamedQuery(name = "CustomerEntity.findAll", query = "SELECT c FROM CustomerEntity c")
+public class CustomerEntity implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "ID", nullable = false)
@@ -20,6 +26,7 @@ public class CustomerEntity {
     private String address;
 
     public CustomerEntity() {
+        super();
     }
 
     public CustomerEntity(String name, int phoneNumber, String address) {
