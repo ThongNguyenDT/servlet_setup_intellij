@@ -12,15 +12,7 @@ public class Product implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Basic
-    @Column(name = "phong", nullable = false)
-    private Integer phong;
 
-    @Basic
-    @Column(name = "name", nullable = false, columnDefinition = "nvarchar(MAX)")
-    private String name;
-
-    
     
 }
 
