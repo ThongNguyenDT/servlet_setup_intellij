@@ -4,14 +4,33 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
   <persistence-unit name="default">
-    <class>com.example.demo.entities.CustomerEntity</class>
-    <class>com.example.demo.entities.Category</class>
+    <class>com.example.demo1.Entities.CategoryEntity</class>
+    <class>com.example.demo1.Entities.FavoritesEntity</class>
+    <class>com.example.demo1.Entities.SharesEntity</class>
+    <class>com.example.demo1.Entities.UsersEntity</class>
+    <class>com.example.demo1.Entities.VideosEntity</class>
     <properties>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/shop_storage"/>
       <property name="jakarta.persistence.jdbc.user" value="root"/>
       <property name="jakarta.persistence.jdbc.password" value="5433596111"/>
       <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
       <property name="hibernate.show_sql" value="true" />
+      <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306"/>
+      <property name="toplink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="toplink.jdbc.user" value="root"/>
+      <property name="toplink.jdbc.password" value="5433596111"/>
+      <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306"/>
+      <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="hibernate.connection.username" value="root"/>
+      <property name="hibernate.connection.password" value="5433596111"/>
+      <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost:3306"/>
+      <property name="openjpa.ConnectionDriverName" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="openjpa.ConnectionUserName" value="root"/>
+      <property name="openjpa.ConnectionPassword" value="5433596111"/>
+      <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306"/>
+      <property name="eclipselink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="eclipselink.jdbc.user" value="root"/>
+      <property name="eclipselink.jdbc.password" value="5433596111"/>
     </properties>
   </persistence-unit>
 </persistence>

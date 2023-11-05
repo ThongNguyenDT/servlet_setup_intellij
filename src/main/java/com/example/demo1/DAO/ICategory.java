@@ -1,7 +1,7 @@
-package com.example.demo.DAO;
+package com.example.demo1.DAO;
 
 
-import com.example.demo.entities.Category;
+import com.example.demo1.Entities.Category;
 
 import java.util.List;
 

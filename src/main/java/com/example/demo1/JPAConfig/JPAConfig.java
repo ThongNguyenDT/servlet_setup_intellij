@@ -1,4 +1,4 @@
-package com.example.demo.JPAConfig;
+package com.example.demo1.JPAConfig;
 
 
 import javax.persistence.EntityManager;
